@@ -1,69 +1,71 @@
+
 "use client";
 import React from "react";
-import { StickyScroll } from "./ui/sticky-scroll-reveal"; 
-const content = [
+import { StickyScroll } from "./ui/sticky-scroll-reveal";
+
+const musicSchoolContent = [
     {
-      title: "Collaborative Music Lessons",
+      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
       description:
-        "Work together in real time with your music students, fellow teachers, and parents. Collaborate on lesson plans, share musical pieces, and make decisions quickly. With our platform, you can streamline your teaching process and increase student engagement.",
-      content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        </div>
-      ),
-    },
-    {
-      title: "Lesson Tracking",
-      description:
-        "Keep track of each student's progress and lesson history with ease. Our platform ensures that you're always up to date with your students' achievements, making it easier to plan future lessons and provide personalized instruction.",
-      content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        </div>
-      ),
-    },
-    {
-      title: "Music Resource Library",
-      description:
-        "Access a wide range of musical resources, including sheet music, practice exercises, and instructional videos. Our platform ensures you have everything you need to inspire and educate your students, all in one place.",
-      content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--blue-500),var(--emerald-500))] flex items-center justify-center text-white">
-        </div>
-      ),
-    },
-    {
-        title: "Collaborative Music Lessons",
-        description:
-          "Work together in real time with your music students, fellow teachers, and parents. Collaborate on lesson plans, share musical pieces, and make decisions quickly. With our platform, you can streamline your teaching process and increase student engagement.",
+        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
         content: (
-          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--yellow-500),var(--emerald-500))] flex items-center justify-center text-white">
+          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
           </div>
         ),
-      },
-      {
-        title: "Lesson Tracking",
-        description:
-          "Keep track of each student's progress and lesson history with ease. Our platform ensures that you're always up to date with your students' achievements, making it easier to plan future lessons and provide personalized instruction.",
+    },
+    {
+      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
+      description:
+        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
         content: (
-          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--rose-500),var(--yellow-500))] flex items-center justify-center text-white">
+          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--emerald-500))] flex items-center justify-center text-white">
           </div>
         ),
-      },
-      {
-        title: "Music Resource Library",
-        description:
-          "Access a wide range of musical resources, including sheet music, practice exercises, and instructional videos. Our platform ensures you have everything you need to inspire and educate your students, all in one place.",
+    },
+    {
+      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
+      description:
+        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
+        content: (
+          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--purple-500),var(--indigo-500))] flex items-center justify-center text-white">
+          </div>
+        ),
+    },
+    {
+      title: 'Live Feedback & Engagement',
+      description:
+        'Immerse yourself in an interactive learning experience where feedback is immediate, just like real-time changes in a collaborative project. This approach enhances your understanding and mastery of music concepts and performance techniques.',
         content: (
           <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--pink-500),var(--indigo-500))] flex items-center justify-center text-white">
           </div>
         ),
-      },
-     
-     
+    },
+    {
+      title: 'Cutting-Edge Curriculum',
+      description:
+        'Our curriculum is continuously updated to include the latest music education trends and technologies, ensuring you’re always learning with the most current and effective methods. Say goodbye to outdated materials and welcome an education that evolves with the industry.',
+        content: (
+          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--blue-500),var(--emerald-500))] flex items-center justify-center text-white">
+          </div>
+        ),
+    },
+    {
+      title: 'Limitless Learning Opportunities',
+      description:
+        'With our expansive resource library and dynamic course offerings, you’ll never find yourself without something new to explore. Our platform provides continuous opportunities for growth, ensuring your musical skills are always advancing.',
+        content: (
+          <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--green-500),var(--emerald-500))] flex items-center justify-center text-white">
+          </div>
+        ),
+    },
   ];
-  
 
-  export default function WhyChooseUs () {
-    return (
-      <div><StickyScroll content={content}/></div>  
-    )
+function WhyChooseUs() {
+  return (
+    <div>
+        <StickyScroll content={musicSchoolContent} />
+    </div>
+  )
 }
 
+export default WhyChooseUs
